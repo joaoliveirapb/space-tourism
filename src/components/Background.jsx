@@ -5,28 +5,30 @@ import { useEffect, useState } from 'react'
 
 export function Background({ children }) {
   const pathname = usePathname()
-  const [background, setBackground] = useState('url(../assets/bg-first.png)')
+  const [background, setBackground] = useState(
+    'bg-[url(../assets/bg-first.png)]',
+  )
 
   useEffect(() => {
     switch (pathname) {
       case '/':
-        setBackground('url(../assets/bg-first.png)')
+        setBackground('bg-[url(../assets/bg-first.png)]')
         break
       case '/destination':
-        setBackground('url(../assets/bg-second.png)')
+        setBackground('bg-[url(../assets/bg-second.png)]')
         break
       case '/crew':
-        setBackground('url(../assets/bg-third.png)')
+        setBackground('bg-[url(../assets/bg-third.png)]')
         break
       case '/technology':
-        setBackground('url(../assets/bg-fourth.png)')
+        setBackground('bg-[url(../assets/bg-fourth.png)]')
         break
     }
   }, [pathname])
 
   return (
     <main
-      className={`flex flex-col min-h-screen pt-10 text-white bg-[${background}] bg-no-repeat bg-cover bg-center`}
+      className={`flex flex-col min-h-screen pt-10 text-white ${background} bg-no-repeat bg-cover bg-center`}
     >
       {children}
     </main>
