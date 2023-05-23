@@ -1,4 +1,5 @@
 import './globals.css'
+import { Background } from '@/components/Background'
 import { Header } from '@/components/Header'
 
 import {
@@ -33,10 +34,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable} font-barlowCondensed flex flex-col h-screen pt-10 text-white bg-[url(../assets/bg-primary.png)] bg-no-repeat bg-cover bg-center`}
+        className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable} font-barlowCondensed`}
       >
-        <Header />
-        {children}
+        <Background>
+          <Header />
+          {children}
+        </Background>
       </body>
     </html>
   )
