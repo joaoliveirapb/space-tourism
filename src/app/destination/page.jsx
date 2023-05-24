@@ -66,7 +66,7 @@ export default function Destination() {
   }
 
   return (
-    <div className="flex-1 text-white">
+    <div className="flex-1 text-white px-40">
       <Title index="01" content="PICK YOUR DESTINATION" />
 
       <div className="mt-14 flex justify-center gap-40">

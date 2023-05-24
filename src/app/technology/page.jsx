@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import rocket from '../../assets/rocket.png'
+import rocket from '../../assets/technology/rocket.png'
 import { Title } from '@/components/Title'
 
 export default function Technology() {
