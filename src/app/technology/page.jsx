@@ -10,21 +10,23 @@ export default function Technology() {
       <div className="flex justify-between items-center">
         <div className="ml-40 flex gap-20 max-w-[610px]">
           <div className="flex flex-col gap-8">
-            <div className="flex items-center justify-center font-bellefair text-3xl w-20 h-20 rounded-full border border-zinc-500 cursor-pointer hover:border-white">
+            <button className="flex items-center justify-center font-bellefair text-3xl w-20 h-20 rounded-full border border-zinc-500 hover:border-white">
               1
-            </div>
-            <div className="flex items-center justify-center font-bellefair text-3xl w-20 h-20 rounded-full border border-zinc-500 cursor-pointer hover:border-white">
+            </button>
+            <button className="flex items-center justify-center font-bellefair text-3xl w-20 h-20 rounded-full border border-zinc-500 hover:border-white">
               2
-            </div>
-            <div className="flex items-center justify-center font-bellefair text-3xl w-20 h-20 rounded-full border border-zinc-500 cursor-pointer hover:border-white">
+            </button>
+            <button className="flex items-center justify-center font-bellefair text-3xl w-20 h-20 rounded-full border border-zinc-500 hover:border-white">
               3
-            </div>
+            </button>
           </div>
           <div>
             <span className="text-zinc-300 tracking-[2.7px]">
               THE TERMINOLOGY...
             </span>
-            <h1 className="font-bellefair text-5xl">LAUNCH VEHICLE</h1>
+            <h1 className="font-bellefair text-5xl mt-3 mb-4">
+              LAUNCH VEHICLE
+            </h1>
             <p className="font-barlow text-zinc-300 text-lg">
               A launch vehicle or carrier rocket is a rocket-propelled vehicle
               used to carry a payload from Earth’s surface to space, usually to
