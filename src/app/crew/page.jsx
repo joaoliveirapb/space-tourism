@@ -62,7 +62,7 @@ export default function Crew() {
   }
 
   return (
-    <div className="flex-1 text-white px-40">
+    <div className="text-white px-40">
       <Title index="02" content="MEET YOUR CREW" />
 
       <div className="flex justify-between">
@@ -100,7 +100,7 @@ export default function Crew() {
         <Image
           src={crew.image}
           alt="Imagem do comandante."
-          className="max-h-[500px]"
+          className="w-[500px] h-[500px]"
         />
       </div>
     </div>

@@ -1,7 +1,9 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
-    <div className="text-white flex flex-1 items-end justify-between">
-      <div className="flex flex-col max-w-[450px] ml-40 mb-20">
+    <div className="text-white flex flex-1 items-center justify-between px-40">
+      <div className="flex flex-col max-w-[450px]">
         <p className="text-[28px] tracking-[4.725px]">
           SO, YOU WANT TO TRAVEL TO
         </p>
@@ -13,11 +15,14 @@ export default function Home() {
           experience!
         </p>
       </div>
-      <div className="h-[400px] w-[400px] mr-20 mb-8">
+      <div className="h-[400px] w-[400px]">
         <div className="flex items-center justify-center h-full w-full rounded-full bg-white/10">
-          <div className="flex items-center justify-center h-[274px] w-[274px] bg-white rounded-full font-bellefair text-black text-3xl leading-9 tracking-[2px]">
+          <Link
+            href="/destination"
+            className="flex items-center justify-center h-[274px] w-[274px] bg-white rounded-full font-bellefair text-black text-3xl leading-9 tracking-[2px]"
+          >
             EXPLORE
-          </div>
+          </Link>
         </div>
       </div>
     </div>

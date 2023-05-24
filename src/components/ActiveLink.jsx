@@ -15,7 +15,7 @@ export function ActiveLink({ content, index, href }) {
           : 'hover:border-b-2 hover:border-gray-500'
       }`}
     >
-      <span>{index}</span>
+      <span className="font-bold">{index}</span>
       {content}
     </Link>
   )
