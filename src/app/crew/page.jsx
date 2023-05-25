@@ -62,19 +62,21 @@ export default function Crew() {
   }
 
   return (
-    <div className="text-white px-40">
+    <div className="text-white px-40 py-10 max-lg:px-8">
       <Title index="02" content="MEET YOUR CREW" />
 
-      <div className="flex justify-between">
-        <div className="relative flex justify-center flex-col">
+      <div className="flex justify-between max-lg:flex-col max-lg:gap-6 max-lg:mt-10">
+        <div className="flex justify-center flex-col max-lg:items-center">
           <span className="font-bellefair text-3xl text-white/20">
             {crew.role}
           </span>
-          <h1 className="font-bellefair text-5xl mt-3 mb-6">{crew.name}</h1>
-          <p className="font-barlow text-lg text-zinc-400 leading-8 max-w-[444px]">
+          <h1 className="font-bellefair text-5xl mt-3 mb-6 max-sm:text-[28px]">
+            {crew.name}
+          </h1>
+          <p className="font-barlow text-lg text-zinc-400 leading-8 max-w-[444px] max-lg:text-center">
             {crew.description}
           </p>
-          <div className="absolute bottom-8 flex gap-6">
+          <div className="flex gap-6 mt-8">
             <ButtonChangeCrew
               value="member1"
               selectedButton={selectedButton}
@@ -100,7 +102,7 @@ export default function Crew() {
         <Image
           src={crew.image}
           alt="Imagem do comandante."
-          className="w-[500px] h-[500px]"
+          className="w-[500px] h-[500px] border-b-[1px] border-zinc-700 max-lg:mx-auto"
         />
       </div>
     </div>

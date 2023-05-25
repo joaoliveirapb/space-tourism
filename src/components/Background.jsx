@@ -28,7 +28,7 @@ export function Background({ children }) {
 
   return (
     <main
-      className={`flex flex-col h-screen pt-10 text-white ${background} bg-no-repeat bg-cover bg-center`}
+      className={`relative flex flex-col min-h-screen pt-10 text-white ${background} bg-no-repeat bg-cover bg-center max-lg:pt-0`}
     >
       {children}
     </main>

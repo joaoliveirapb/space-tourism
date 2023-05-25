@@ -1,6 +1,7 @@
 import './globals.css'
 import { Background } from '@/components/Background'
 import { Header } from '@/components/Header'
+import { MenuMobile } from '@/components/MenuMobile'
 
 import {
   Barlow,
@@ -38,6 +39,9 @@ export default function RootLayout({ children }) {
       >
         <Background>
           <Header />
+          <div className="hidden max-sm:flex">
+            <MenuMobile />
+          </div>
           {children}
         </Background>
       </body>

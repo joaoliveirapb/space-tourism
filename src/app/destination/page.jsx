@@ -66,12 +66,12 @@ export default function Destination() {
   }
 
   return (
-    <div className="flex-1 text-white px-40">
+    <div className="flex-1 text-white px-40 py-10 max-lg:px-8">
       <Title index="01" content="PICK YOUR DESTINATION" />
 
-      <div className="mt-14 flex justify-center gap-40">
+      <div className="mt-14 flex justify-center gap-40 max-lg:flex-col max-lg:items-center max-lg:gap-20">
         <Image src={destination.image} alt="" className="h-[380px] w-[380px]" />
-        <div className="w-[445px] flex flex-col">
+        <div className="max-w-[445px] flex flex-col max-lg:items-center">
           <nav className="flex gap-9 h-8">
             <ButtonChangeDestination
               onClick={handleChangeDestination}
@@ -98,13 +98,13 @@ export default function Destination() {
               TITAN
             </ButtonChangeDestination>
           </nav>
-          <h1 className="font-bellefair text-8xl mt-7 mb-2">
+          <h1 className="font-bellefair text-8xl mt-7 mb-2 max-sm:text-[56px]">
             {destination.title}
           </h1>
-          <p className="font-barlow text-lg leading-8 text-zinc-300">
+          <p className="font-barlow text-lg leading-8 text-zinc-300 max-sm:text-base max-sm:text-center">
             {destination.description}
           </p>
-          <div className="flex gap-20 mt-7 pt-6 border-t-[1px] border-gray-500">
+          <div className="flex gap-20 mt-7 pt-6 border-t-[1px] border-gray-500 max-lg:flex-col max-lg:gap-6 max-lg:w-full max-lg:text-center max-lg:text-sm">
             <div>
               <span className="text-zinc-400 text-sm tracking-[2.3px]">
                 AVG. DISTANCE

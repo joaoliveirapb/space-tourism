@@ -48,12 +48,12 @@ export default function Technology() {
   }
 
   return (
-    <div className=" flex-1 text-white px-40">
+    <div className=" flex-1 text-white px-40 py-10 max-lg:px-8">
       <Title index="03" content="SPACE LAUNCH 101" />
 
-      <div className="flex justify-between items-center">
-        <div className="flex items-center gap-20">
-          <div className="flex flex-col gap-8">
+      <div className="flex justify-between items-center max-lg:flex-col max-lg:gap-10 max-lg:mt-10">
+        <div className="flex items-center gap-20 max-lg:flex-col">
+          <div className="flex flex-col gap-8 max-lg:flex-row">
             <ButtonChangeTechnology
               onClick={handleChangeTechnology}
               selectedButton={selectedButton}
@@ -73,11 +73,11 @@ export default function Technology() {
               3
             </ButtonChangeTechnology>
           </div>
-          <div>
+          <div className="text-center">
             <span className="text-zinc-300 tracking-[2.7px]">
               THE TERMINOLOGY...
             </span>
-            <h1 className="font-bellefair text-5xl mt-3 mb-4">
+            <h1 className="font-bellefair text-5xl mt-3 mb-4 max-sm:text-[28px]">
               {technology.name}
             </h1>
             <p className="font-barlow text-zinc-300 text-lg max-w-[444px]">
