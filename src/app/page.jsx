@@ -17,7 +17,7 @@ export default function Home() {
           experience!
         </p>
       </div>
-      <div className="max-h-[400px] max-w-[400px]">
+      <div className="h-[400px] w-[400px] max-sm:h-[350px] max-sm:w-[350px]">
         <div className="flex items-center justify-center h-full w-full rounded-full bg-white/10">
           <Link
             href="/destination"
