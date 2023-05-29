@@ -23,6 +23,9 @@ O projeto consiste em um site de múltiplas páginas de turismo espacial, com pe
 ### Screen da página Home
 ![home](./public/home-mobile.png)
 
+### Screen da página Home com menu aberto
+![menu](./public/menu-mobile.png)
+
 ### Screen da página Destination
 ![destination](./public/destination-mobile.png)
 
