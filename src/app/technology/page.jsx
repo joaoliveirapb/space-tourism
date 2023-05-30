@@ -73,7 +73,7 @@ export default function Technology() {
               3
             </ButtonChangeTechnology>
           </div>
-          <div className="text-center">
+          <div className="max-sm:text-center">
             <span className="text-zinc-300 tracking-[2.7px]">
               THE TERMINOLOGY...
             </span>
